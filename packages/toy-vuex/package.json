@@ -1,0 +1,25 @@
+{
+  "name": "toy-vuex",
+  "version": "0.0.0",
+  "description": "toy vuex",
+  "author": "STPace <heliapan@outlook.com>",
+  "homepage": "https://github.com/STPace/toys#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STPace/toys.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/STPace/toys/issues"
+  }
+}
