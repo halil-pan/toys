@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./index.js"></script>
+    <script>
+      function Counter() {
+        const [count, setCount] = React.useState(1);
+        return React.createElement(
+          'p',
+          {
+            onClick: () => setCount((count) => count + 1),
+          },
+          count,
+        );
+      }
+      function App(props) {
+        return React.createElement('h1', null, 'Hi ', props.name);
+      }
+      const element = React.createElement(
+        'div',
+        { id: 'foo' },
+        React.createElement(App, {
+          name: 'bar',
+        }),
+        React.createElement(Counter, null),
+      );
+
+      const container = document.getElementById('root');
+
+      ReactDOM.render(element, container);
+    </script>
+  </body>
+</html>
