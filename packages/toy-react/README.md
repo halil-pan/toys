@@ -5,6 +5,7 @@
 ```ts
 interface Props {
   children: Element[];
+  [key: string]: any;
 }
 
 interface Element {
